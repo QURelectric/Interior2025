@@ -65,7 +65,7 @@ Step by Step instructions
    ----------------
    From Geany:
      - Press F5, or
-     - Click "Build" → "Execute"
+     - Click the paper airplane icon
 
    Alternatively, from the terminal:
    'python3 workshop1.py'
@@ -77,6 +77,7 @@ Step by Step instructions
      - The LED turns ON by default.
      - Pressing the button turns the LED OFF.
      - Releasing the button turns it back ON.
+     - The LED may be dim, and you may also need to adjust the contrast of the LCD. This is done by slowly turning the small white screw on the back of the board.  
 
 WIRING (BCM GPIO Numbers)
 ----------------------------------------------------------------------
