@@ -22,10 +22,10 @@ REQUIRED HARDWARE
 
 - Raspberry Pi 4
 - Breadboard + jumper wires
-- 1x LED (active-low)
+- 1x LED
 - 1x 330Ω resistor
 - 1x pushbutton
-- 1x 1602 LCD with I2C backpack
+- 1x 1602 LCD with I2C backpack (Small black pcb attached to the green display pcb)
 
 
 Step by Step instructions
@@ -80,6 +80,8 @@ Step by Step instructions
 
 WIRING (BCM GPIO Numbers)
 ----------------------------------------------------------------------
+NOTE: The breadboard power rails are color coded, but the color is not always correct.
+Always refer to the +/- symbols on the adapter board, where - refers to the ground side.
 
 - LED:
   - GPIO17 → Resistor → LED cathode (short leg)
@@ -95,7 +97,6 @@ WIRING (BCM GPIO Numbers)
   - VCC → 5V
   - GND → GND
 
-----------------------------------------------------------------------  
 REQUIRED LIBRARIES
 ----------------------------------------------------------------------
 
@@ -104,6 +105,14 @@ Most are pre-installed on Raspberry Pi OS:
 - `smbus2`
 - `signal` and `time` (standard Python)
 
-If needed:
+Unlikely, but if needed:
 ```bash
 pip3 install smbus2
+```
+If weird errors occur, check the Raspberry Pi Preferences in settings and tick 'I2C' to be enabled. 
+
+Future Considerations
+----------------------------------------------------------------------
+- Implementing sensors as inputs
+- Using the OLED display
+- Wrapping the LCD helper functions in a class
