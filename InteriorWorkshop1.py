@@ -23,8 +23,8 @@ button = Button(27, pull_up=True)
 led.on()
 
 # Turn LED off when button is pressed, on when released
-button.when_pressed = led.off()
-button.when_released = led.on()
+button.when_pressed = led.off
+button.when_released = led.on
 
 # ========== SECTION 2: I2C LCD Display ==========
 # The common 1602 display usually uses up to 8 pins to transmit data, but many modules are equipped
@@ -88,3 +88,4 @@ lcd_message("Press button -->", LCD_LINE_2)
 print("System ready. Press the button to control the LED.")
 # This line keeps the program from ending early. 
 pause()
+
