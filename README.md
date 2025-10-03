@@ -47,16 +47,16 @@ Step by Step instructions
 3. Clone the Repository  
    ---------------------
    On your Raspberry Pi, open a terminal and run:
-   'git clone https://github.com/QURelectric/Interior2025'
+   ```git clone https://github.com/QURelectric/Interior2025```
    and then enter
-   'cd Interior2025'
+   ```cd Interior2025```
    to move into the directory that was just made. 
 
 5. Open the Code in Geany  
    ------------------------
    Geany is a simple text editor with python support.  
    To open the code in Geany, type into the terminal:
-   'geany workshop1.py &'
+   `geany workshop1.py &`
 
    Alternatively, open Geany from the desktop menu  
    and open the `workshop1.py` file manually.
