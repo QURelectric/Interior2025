@@ -21,6 +21,9 @@ REQUIRED HARDWARE
 ----------------------------------------------------------------------
 
 - Raspberry Pi 4
+- Raspberry Pi power supply
+- USB keyboard
+- Monitor or Display
 - Breadboard + jumper wires
 - 1x LED
 - 1x 330Ω resistor
@@ -30,6 +33,9 @@ REQUIRED HARDWARE
 
 Step by Step instructions
 ----------------------------------------------------------------------
+0. Set up the Pi
+   ---------------
+   Plug in the power supply, keyboard, and display to the raspberry pi. The pi should power up and bring you to a home screen.
 1. Review the Wiring  
    ------------------
    Follow the wiring guide below.  
@@ -52,7 +58,7 @@ Step by Step instructions
    ```cd Interior2025```
    to move into the directory that was just made. 
 
-5. Open the Code in Geany  
+4. Open the Code in Geany  
    ------------------------
    Geany is a simple text editor with python support.  
    To open the code in Geany, type into the terminal:
@@ -61,7 +67,7 @@ Step by Step instructions
    Alternatively, open Geany from the desktop menu  
    and open the `workshop1.py` file manually.
 
-6. Run the Program  
+5. Run the Program  
    ----------------
    From Geany:
      - Press F5, or
